@@ -1,7 +1,7 @@
 create table employee( employee_id int  primary key,first_name varchar(50),
 last_name varchar(50),department_id int,hire_date date);
 show tables;
-create table deaprtment (department_id int primary key,department_name varchar(50));
+create table department (department_id int primary key,department_name varchar(50));
 create table salaries(employee_id int ,salary int ,bonus int,primary key(employee_id),foreign key(employee_id) references
 employee(employee_id));
 insert into employee(employee_id,first_name,last_name,department_id,hire_date)
